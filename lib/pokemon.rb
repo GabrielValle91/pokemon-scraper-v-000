@@ -13,6 +13,6 @@ class Pokemon
   def self.find(id, db)
     db.execute("SELECT pokemon.id FROM pokemon WHERE pokemon.id = #{id};")
     #binding.pry
-    @@all[1]
+    @@all[0]
   end
 end
