@@ -15,7 +15,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-    record = db.execute("SELECT pokemon.id FROM pokemon WHERE pokemon.id = #{id};").first.first
+    record = db.execute("SELECT pokemon.id FROM pokemon WHERE pokemon.id = #{id};").flatten.first
     #binding.pry
     @@all[record - 1]
   end
