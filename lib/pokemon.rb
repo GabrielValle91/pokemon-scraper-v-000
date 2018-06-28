@@ -19,4 +19,8 @@ class Pokemon
     #binding.pry
     @@all[record - 1]
   end
+
+  def alter_hp(hp)
+    @db.execute("UPDATE pokemon SET hp = #{hp} WHERE id = #{@id};")
+  end
 end
