@@ -5,7 +5,11 @@ class Pokemon
 
   end
 
-  def save
+  def save(name, type, db)
+
+  end
+
+  def self.find(id)
 
   end
 end
